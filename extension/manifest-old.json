@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YT Dialog Checker",
+  "version": "1.0",
+  "description": "A simple Chrome extension",
+  "author": "Mussa Charles",
+  "permissions": ["activeTab", "storage"],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "YT Dialog Checker"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "YT AD Dialog Checker",
+  "version": "1.0.5",
+  "description": "YT ad-warning dialog checker",
+  "author": "Mussa Charles (mussacharles60@gmail.com)",
+  "permissions": ["activeTab", "storage", "tabs", "webNavigation"],
+  "icons": {
+    "48": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
